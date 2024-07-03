@@ -1,0 +1,340 @@
+/*
+@import url("//hello.myfonts.net/count/2fd1ca");
+
+  
+@font-face {font-family: 'QuotesCaps-Regular';src: url('../fonts/2FD1CA_0_0.eot');src: url('../fonts/2FD1CA_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2FD1CA_0_0.woff2') format('woff2'),url('../fonts/2FD1CA_0_0.woff') format('woff'),url('../fonts/2FD1CA_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'QuotesScript-Regular';src: url('../fonts/2FD1CA_1_0.eot');src: url('../fonts/2FD1CA_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2FD1CA_1_0.woff2') format('woff2'),url('../fonts/2FD1CA_1_0.woff') format('woff'),url('../fonts/2FD1CA_1_0.ttf') format('truetype');}
+ 
+.QuotesCaps-Regular { 
+  font-family: QuotesCaps-Regular;
+  font-weight: normal;
+  font-style: normal;
+}
+.QuotesScript-Regular { 
+  font-family: QuotesScript-Regular;
+  font-weight: normal;
+  font-style: normal;
+}
+*/
+
+* {
+   -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+html, 
+body {
+  width:100%;
+  height:100%;
+  padding:0;
+  margin:0;  
+  color:#2d285b;
+ color:rgba(45, 40, 91, 0.7);
+}
+
+section {
+  width:100%;
+  padding:0;
+  margin:0;
+    overflow-x: hidden;
+}
+
+img.responsive {
+    max-width:100%;
+    width: 100%;
+    height:auto;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 400;
+  font-size:15px;
+  line-height: 1.8;
+}
+
+h1, h2, h3, h4, h5 { 
+  font-family: "futura-pt-bold","Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  color:#2d285b;
+  text-transform: uppercase;    
+}
+
+.text-left {text-align:center}.text-right {text-align:center}
+
+.border {
+    border:10px solid #2d285b;
+    padding:25px;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+a {
+  color:#2d285b;    
+}
+ 
+.nav>li>a:hover, .nav>li>a:focus {
+  background: none;
+}
+
+.navbar {
+ background: #FFFFFF;
+  background: rgba(255,255,255, 1);
+  font-family: "futura-pt-bold","Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+
+video {
+  width:100%;
+     background:transparent url("../vid/poster.jpg") no-repeat 0 0; 
+   -webkit-background-size:cover; 
+   -moz-background-size:cover; 
+   -o-background-size:cover; 
+   background-size:cover; 
+   cursor:pointer;
+   margin-top: 40px;
+}
+
+.anim {
+  opacity:0;
+}
+
+.anim.animated {
+  opacity:1;
+}
+
+.carousel {
+  display: none;
+/*  height: 100%;
+  height: 100vh;*/
+}
+
+.navbar .container {
+  padding:0;
+}
+
+.container {
+  padding:30px;
+}
+
+.container-fluid {
+    padding:30px 0;
+}
+
+footer .container {
+  padding:20px;
+}
+
+footer a {
+  color:#2d285b;
+}
+
+a.nodeco:hover,
+footer a:hover {
+  text-decoration: none;
+}
+
+.jumbotron .container {
+  padding:20vh 40px;
+}
+
+.jumbotron h1, .jumbotron .h1 {
+    color: #2d285b;
+}
+
+.jumbotron p {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.logo {
+  max-width:100px;
+  margin:0 auto;  
+  padding: 15px 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.logo img {
+  width:100%;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 0;
+  right:0;
+  padding:15px;
+}
+
+.navbar-toggle .icon-bar {
+  background: #2780e3;
+}
+
+.navbar-brand {
+  display:none;
+}
+
+.jumbotron {
+    height: 100%;
+    height: 100vh;
+    background: url("../img/jumbotron.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.jumbotron h3 {
+    line-height: 1.5;
+}
+
+.row-header {
+  text-align: center;
+  margin-bottom:80px;
+}
+.row-header h2 {
+  margin:0;
+  font-size:3.3em;
+}
+
+footer {
+  border-top:1px solid #e6e6e6;
+}
+
+footer p {
+  margin-bottom:0;
+}
+
+.horizontal-center {
+    float: none;
+    margin: 0 auto;
+}
+
+.vertical-center {
+
+  min-height: 100%;  /* Fallback for vh unit */
+  min-height: 100vh; /* You might also want to use
+                        'height' property instead.
+                        
+                        Note that for percentage values of
+                        'height' or 'min-height' properties,
+                        the 'height' of the parent element
+                        should be specified explicitly.
+  
+                        In this case the parent of '.vertical-center'
+                        is the <body> element */
+
+  /* Make it a flex container */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; 
+  
+  /* Align the bootstrap's container vertically */
+    -webkit-box-align : center;
+  -webkit-align-items : center;
+       -moz-box-align : center;
+       -ms-flex-align : center;
+          align-items : center;
+  
+  /* In legacy web browsers such as Firefox 9
+     we need to specify the width of the flex container */
+  width: 100%;
+  
+  /* Also 'margin: 0 auto' doesn't have any effect on flex items in such web browsers
+     hence the bootstrap's container won't be aligned to the center anymore.
+  
+     Therefore, we should use the following declarations to get it centered again */
+         -webkit-box-pack : center;
+            -moz-box-pack : center;
+            -ms-flex-pack : center;
+  -webkit-justify-content : center;
+          justify-content : center;
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    padding: 20px;
+}
+
+.delay02 {
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 2s;
+  -moz-animation-duration: 3s;
+  -moz-animation-delay: 2s;
+  animation-duration: 3s;
+  animation-delay: 2s;
+}
+
+@media(min-width:767px) {
+
+	body {
+	font-size:17px;
+	}
+
+	.logo {
+	max-width: 245px;
+	}
+
+	.jumbotron .container {
+	padding: 30vh 40px;
+	}
+
+	.text-left{text-align:left}.text-right{text-align:right}.text-center{text-align:center}
+
+	
+	footer .container {
+	  padding:20px 0;
+	}
+	
+	.container {
+	padding: 100px 40px;
+	}
+
+	.container-fluid {
+	padding:100px 0;
+	}
+
+	.border {
+	border:20px solid #2d285b;
+	padding:55px;
+	max-width: 445px;
+	}
+
+	.border.absolute.bg {
+	position: absolute;
+	top: 45px;
+	background: rgba(255,255,255,0.95);
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	max-width: 545px;
+	}
+	.navbar.shrink .logo {
+	float: left;
+	max-width: 123px;
+	}
+
+	.navbar.shrink .navbar-nav {
+	 margin-bottom: 0; 
+	     float: right;
+	}
+
+	.navbar.shrink .navbar-nav>li>a {
+	padding: 24px 20px;
+	}
+
+	.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+	padding: 45px;
+	}
+
+}
