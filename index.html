@@ -217,6 +217,43 @@
             <h2>Contact</h2>
           </div>
 
+          <!-- Make sure you don't change the form action-->
+          <form class="contact col-md-6 horizontal-center" role="form" action="https://api.staticforms.xyz/submit" method="post" Content-Type="application/json">
+            <!-- If we receive data in this field submission will be ignored -->
+            <input type="text" name="honeypot" style="display: none;"> <!-- Optional -->
+            <!-- Replace with accesKey sent to your email -->
+              <input type="hidden" name="accessKey" value="a64cb43c-3279-41b7-90d0-65c443aff8e0"> <!-- Required -->
+              <div class="form-group">
+                <label class="control-label" for="name">Nom</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Nom"> <!-- Optional -->
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email" required> <!-- Required -->
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="phone">Téléphone</label>
+                <input type="phone" class="form-control" id="phone" name="phone" placeholder="Téléphone"> <!-- Optional -->
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="message">Message</label>
+                <textarea class="form-control" name="message" rows="3"></textarea> <!-- Optional -->
+              </div>
+              <div class="form-group">
+                <div class="checkbox">
+                  <label for="robot">
+                    <input id="robot" name="robot" type="checkbox" value="robot" required>
+                    <span class="small">Je ne suis pas un robot, faut pas croire ce que disent les…</span>
+                  </label>
+                </div>
+              </div>
+            <!-- If you want form to redirect to a specific url after submission -->
+            <!-- <input type="hidden" name="redirectTo" value="https://example.com/contact/success"> Optional -->
+            <div class="form-group">
+              <input type="submit" value="Submit" value="Envoyer" class="btn btn-default"/>
+            </div>
+        </form>
+
           <div class="col-md-12 text-center wow fadeInUp">
 
             <ul class="list-inline">
