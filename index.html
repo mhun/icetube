@@ -219,8 +219,6 @@
 
           <!-- Make sure you don't change the form action-->
           <form class="contact col-md-6 horizontal-center" role="form" action="https://api.staticforms.xyz/submit" method="post">
-            <!-- If we receive data in this field submission will be ignored -->
-            <input type="text" name="honeypot" style="display: none;"> <!-- Optional -->
             <!-- Replace with accesKey sent to your email -->
               <input type="hidden" name="accessKey" value="a64cb43c-3279-41b7-90d0-65c443aff8e0"> <!-- Required -->
               <div class="form-group">
@@ -247,6 +245,8 @@
                   </label>
                 </div>
               </div>
+              <!-- If we receive data in this field submission will be ignored -->
+              <input type="text" name="honeypot" style="display: none;"> <!-- Optional -->
             <!-- If you want form to redirect to a specific url after submission -->
             <!-- <input type="hidden" name="redirectTo" value="https://example.com/contact/success"> Optional -->
             <div class="form-group">
