@@ -24,6 +24,7 @@
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <script src="//cdn.bootcss.com/masonry/3.3.2/masonry.pkgd.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -218,7 +219,7 @@
           </div>
 
           <!-- Make sure you don't change the form action-->
-          <form class="contact col-md-6 horizontal-center" role="form" action="https://api.staticforms.xyz/submit" method="post">
+          <form id="contact_form" class="contact col-md-6 horizontal-center" role="form" action="https://api.staticforms.xyz/submit" method="post">
             <!-- Replace with accesKey sent to your email -->
               <input type="hidden" name="accessKey" value="a64cb43c-3279-41b7-90d0-65c443aff8e0"> <!-- Required -->
               <div class="form-group">
@@ -250,7 +251,13 @@
             <!-- If you want form to redirect to a specific url after submission -->
             <!-- <input type="hidden" name="redirectTo" value="https://example.com/contact/success"> Optional -->
             <div class="form-group">
-              <input type="submit" value="Submit" value="Envoyer" class="btn btn-default"/>
+              <input 
+                type="submit" 
+                value="Envoyer" 
+                data-sitekey="6LcZWhAqAAAAACmDhUmEP3b0jxlR8CoinhELCLxD" 
+                data-callback='onSubmit' 
+                data-action='submit'
+                class="btn g-recaptcha btn-default"/>
             </div>
         </form>
 
@@ -293,7 +300,14 @@
         <!-- Scrolling Nav JavaScript -->
         <script src="js/vendor/jquery.easing.min.js"></script>
         <script src="js/vendor/scrolling-nav.js"></script>
-
+        
         <script src="js/main.js"></script>
+
+        <script>
+          function onSubmit(token) {
+            document.getElementById("contact_form").submit();
+          }
+        </script>
+
     </body>
 </html>
